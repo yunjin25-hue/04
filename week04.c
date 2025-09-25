@@ -3,14 +3,18 @@
 
 int main(int argc, char *argv[])
 {
-  //실습3
+  //실습4
   
-  int sec; 
+  int year;
   
-  printf("input the second : ");
-  scanf("%d",&sec); //변수 sec에 초 입력 받은 거 저장  
+  printf("input the year : ");
+  scanf("%d",&year);
   
-  printf("the time is %d : %d\n",sec/60,sec%60); //입력받은 초를 60으로 나누면 몫은 분으로, 나머지는 초로  
+  printf("is the year %d the leap year? : %d\n",   //C언어는 가독성을 위해 한 줄 띄어도 문제 X 
+                                              year,
+                                              (year%4==0 && year%100!=0) || (year%400==0)); 
+                                              //년도가 4로 나누어 떨어지면서 100으로 나누어 떨어지지 않거나 400으로 나누어 떨어지면 윤년 
+  
   
   system("PAUSE");	
   return 0;
