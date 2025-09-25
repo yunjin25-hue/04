@@ -3,19 +3,19 @@
 
 int main(int argc, char *argv[])
 {
+  //½Ç½À2
   
-  int x,y,z,m;
-  int a,b,c;
-  x=2;
-  z=1;
-  a=3;
-  b=4;
-  c=5;
+  int num_1,num_2;
   
-  y=a*x*x+b*x+c;
-  m=(x+y+z)/3;
+  printf("input two integers : ");
+  scanf("%d %d",&num_1,&num_2);
   
-  printf("y=%d,m=%d",y,m);
+  printf("+ result is %d\n",num_1+num_2);
+  printf("- result is %d\n",num_1+-num_2);
+  printf("* result is %d\n",num_1*num_2);
+  printf("/ result is %d\n",num_1/num_2);
+  printf("%% result is %d\n",num_1%num_2);
+  
   system("PAUSE");	
   return 0;
 }
