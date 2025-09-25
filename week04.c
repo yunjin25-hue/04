@@ -3,18 +3,14 @@
 
 int main(int argc, char *argv[])
 {
-  //실습2
+  //실습3
   
-  int num_1,num_2;
+  int sec; 
   
-  printf("input two integers : ");
-  scanf("%d %d",&num_1,&num_2);
+  printf("input the second : ");
+  scanf("%d",&sec); //변수 sec에 초 입력 받은 거 저장  
   
-  printf("+ result is %d\n",num_1+num_2);
-  printf("- result is %d\n",num_1+-num_2);
-  printf("* result is %d\n",num_1*num_2);
-  printf("/ result is %d\n",num_1/num_2);
-  printf("%% result is %d\n",num_1%num_2);
+  printf("the time is %d : %d\n",sec/60,sec%60); //입력받은 초를 60으로 나누면 몫은 분으로, 나머지는 초로  
   
   system("PAUSE");	
   return 0;
